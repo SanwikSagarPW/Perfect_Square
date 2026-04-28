@@ -1,0 +1,117 @@
+{
+  "game_template": "Math Number Sorter",
+  "topic": "Perfect Squares and Perfect Cubes",
+  "total_levels": 3,
+  "max_total_xp": 200,
+  
+  "levels": [
+    {
+      "level": 1,
+      "objective_text": "Sort Perfect Squares from Other Numbers!",
+      "conveyor_speed_modifier": 0.4,
+      "total_items_in_level": 12,
+      "item_spawn_interval_seconds": 5,
+      "xp_per_correct": 5,
+      "xp_per_incorrect": -2,
+      "combo_bonus_xp": 1,
+      "target_xp": 50,
+      "reactor": 0,
+
+      "containers": [
+        { "name": "Perfect Square", "id": "perfect_square" },
+        { "name": "Not Square", "id": "not_square" }
+      ],
+
+      "items": [
+        { "id": "1", "display_text": "1", "correct_category_name": "Perfect Square", "presentation_mode": "NAME", "hint_text": "1 = 1²" },
+        { "id": "3", "display_text": "3", "correct_category_name": "Not Square", "presentation_mode": "NAME", "hint_text": "Not a perfect square" },
+        { "id": "4", "display_text": "4", "correct_category_name": "Perfect Square", "presentation_mode": "NAME", "hint_text": "4 = 2²" },
+        { "id": "7", "display_text": "7", "correct_category_name": "Not Square", "presentation_mode": "NAME", "hint_text": "Not a perfect square" },
+        { "id": "9", "display_text": "9", "correct_category_name": "Perfect Square", "presentation_mode": "NAME", "hint_text": "9 = 3²" },
+        { "id": "12", "display_text": "12", "correct_category_name": "Not Square", "presentation_mode": "NAME", "hint_text": "Not a perfect square" },
+        { "id": "16", "display_text": "16", "correct_category_name": "Perfect Square", "presentation_mode": "NAME", "hint_text": "16 = 4²" },
+        { "id": "20", "display_text": "20", "correct_category_name": "Not Square", "presentation_mode": "NAME", "hint_text": "Not a perfect square" },
+        { "id": "25", "display_text": "25", "correct_category_name": "Perfect Square", "presentation_mode": "NAME", "hint_text": "25 = 5²" },
+        { "id": "30", "display_text": "30", "correct_category_name": "Not Square", "presentation_mode": "NAME", "hint_text": "Not a perfect square" },
+        { "id": "36", "display_text": "36", "correct_category_name": "Perfect Square", "presentation_mode": "NAME", "hint_text": "36 = 6²" },
+        { "id": "40", "display_text": "40", "correct_category_name": "Not Square", "presentation_mode": "NAME", "hint_text": "Not a perfect square" }
+      ]
+    },
+
+    {
+      "level": 2,
+      "objective_text": "Identify Perfect Cubes!",
+      "conveyor_speed_modifier": 0.45,
+      "total_items_in_level": 12,
+      "item_spawn_interval_seconds": 5,
+      "xp_per_correct": 7,
+      "xp_per_incorrect": -3,
+      "combo_bonus_xp": 2,
+      "target_xp": 60,
+      "reactor": 0,
+
+      "containers": [
+        { "name": "Perfect Cube", "id": "perfect_cube" },
+        { "name": "Not Cube", "id": "not_cube" }
+      ],
+
+      "items": [
+        { "id": "1", "display_text": "1", "correct_category_name": "Perfect Cube", "presentation_mode": "NAME", "hint_text": "1 = 1³" },
+        { "id": "5", "display_text": "5", "correct_category_name": "Not Cube", "presentation_mode": "NAME", "hint_text": "Not a perfect cube" },
+        { "id": "8", "display_text": "8", "correct_category_name": "Perfect Cube", "presentation_mode": "NAME", "hint_text": "8 = 2³" },
+        { "id": "15", "display_text": "15", "correct_category_name": "Not Cube", "presentation_mode": "NAME", "hint_text": "Not a perfect cube" },
+        { "id": "27", "display_text": "27", "correct_category_name": "Perfect Cube", "presentation_mode": "NAME", "hint_text": "27 = 3³" },
+        { "id": "32", "display_text": "32", "correct_category_name": "Not Cube", "presentation_mode": "NAME", "hint_text": "Not a perfect cube" },
+        { "id": "64", "display_text": "64", "correct_category_name": "Perfect Cube", "presentation_mode": "NAME", "hint_text": "64 = 4³" },
+        { "id": "50", "display_text": "50", "correct_category_name": "Not Cube", "presentation_mode": "NAME", "hint_text": "Not a perfect cube" },
+        { "id": "125", "display_text": "125", "correct_category_name": "Perfect Cube", "presentation_mode": "NAME", "hint_text": "125 = 5³" },
+        { "id": "100", "display_text": "100", "correct_category_name": "Not Cube", "presentation_mode": "NAME", "hint_text": "Not a perfect cube" },
+        { "id": "216", "display_text": "216", "correct_category_name": "Perfect Cube", "presentation_mode": "NAME", "hint_text": "216 = 6³" },
+        { "id": "200", "display_text": "200", "correct_category_name": "Not Cube", "presentation_mode": "NAME", "hint_text": "Not a perfect cube" }
+      ]
+    },
+
+    {
+      "level": 3,
+      "objective_text": "Sort Perfect Squares vs Perfect Cubes!",
+      "conveyor_speed_modifier": 0.5,
+      "total_items_in_level": 14,
+      "item_spawn_interval_seconds": 4.5,
+      "xp_per_correct": 10,
+      "xp_per_incorrect": -4,
+      "combo_bonus_xp": 3,
+      "target_xp": 90,
+      "reactor": 0,
+
+      "containers": [
+        { "name": "Perfect Square", "id": "perfect_square" },
+        { "name": "Perfect Cube", "id": "perfect_cube" }
+      ],
+
+      "items": [
+        { "id": "4", "display_text": "4", "correct_category_name": "Perfect Square", "presentation_mode": "NAME", "hint_text": "4 = 2²" },
+        { "id": "8", "display_text": "8", "correct_category_name": "Perfect Cube", "presentation_mode": "NAME", "hint_text": "8 = 2³" },
+        { "id": "9", "display_text": "9", "correct_category_name": "Perfect Square", "presentation_mode": "NAME", "hint_text": "9 = 3²" },
+        { "id": "27", "display_text": "27", "correct_category_name": "Perfect Cube", "presentation_mode": "NAME", "hint_text": "27 = 3³" },
+        { "id": "16", "display_text": "16", "correct_category_name": "Perfect Square", "presentation_mode": "NAME", "hint_text": "16 = 4²" },
+        { "id": "125", "display_text": "125", "correct_category_name": "Perfect Cube", "presentation_mode": "NAME", "hint_text": "125 = 5³" },
+        { "id": "25", "display_text": "25", "correct_category_name": "Perfect Square", "presentation_mode": "NAME", "hint_text": "25 = 5²" },
+        { "id": "216", "display_text": "216", "correct_category_name": "Perfect Cube", "presentation_mode": "NAME", "hint_text": "216 = 6³" },
+        { "id": "49", "display_text": "49", "correct_category_name": "Perfect Square", "presentation_mode": "NAME", "hint_text": "49 = 7²" },
+        { "id": "343", "display_text": "343", "correct_category_name": "Perfect Cube", "presentation_mode": "NAME", "hint_text": "343 = 7³" },
+        { "id": "81", "display_text": "81", "correct_category_name": "Perfect Square", "presentation_mode": "NAME", "hint_text": "81 = 9²" },
+        { "id": "512", "display_text": "512", "correct_category_name": "Perfect Cube", "presentation_mode": "NAME", "hint_text": "512 = 8³" },
+        { "id": "100", "display_text": "100", "correct_category_name": "Perfect Square", "presentation_mode": "NAME", "hint_text": "100 = 10²" },
+        { "id": "729", "display_text": "729", "correct_category_name": "Perfect Cube", "presentation_mode": "NAME", "hint_text": "729 = 9³" }
+      ]
+    }
+  ],
+
+  "star_rating_thresholds": {
+    "_3_stars": 0.9,
+    "_2_stars": 0.7,
+    "_1_star": 0.5
+  },
+
+  "reaction_types_available": []
+}

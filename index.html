@@ -96,6 +96,16 @@
           transform: rotate(-90deg);
         }
       }
+
+      /* Enforce landscape: show overlay and hide game in portrait mode */
+      @media screen and (orientation: portrait) {
+        #rotation-animation {
+          display: flex !important;
+        }
+        #page-container {
+          display: none !important;
+        }
+      }
     </style>
   </head>
   <body>
@@ -197,7 +207,24 @@
       });
 
       // Initial setup calls before loading starts
-      applyLetterboxing(); 
+      applyLetterboxing();
+
+      // --- SCREEN ORIENTATION LOCK ---
+      function lockLandscape() {
+        if (screen.orientation && screen.orientation.lock) {
+          screen.orientation.lock('landscape').catch(function() {});
+        }
+      }
+      // Attempt lock on page load
+      lockLandscape();
+      // Re-attempt on first user interaction (required by some browsers)
+      function onFirstInteraction() {
+        lockLandscape();
+        document.removeEventListener('click', onFirstInteraction);
+        document.removeEventListener('touchstart', onFirstInteraction);
+      }
+      document.addEventListener('click', onFirstInteraction);
+      document.addEventListener('touchstart', onFirstInteraction);
       document.body.appendChild(script);
     </script>
   </body>
